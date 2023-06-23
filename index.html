@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Delivery Platform API Documentation</title>
+</head>
+<body>
+  <h1>Food Delivery Platform API Documentation</h1>
+
+  <h2>Restaurant Endpoints</h2>
+
+  <h3>GET /restaurants</h3>
+  <p>Get a list of all restaurants.</p>
+  <h4>Request:</h4>
+  <p>No parameters required.</p>
+  <h4>Response:</h4>
+  <p>JSON array of restaurant objects.</p>
+  <h4>Authentication:</h4>
+  <p>Not required.</p>
+
+  <h3>GET /restaurants/:id</h3>
+  <p>Get details of a specific restaurant.</p>
+  <h4>Request:</h4>
+  <p>No parameters required.</p>
+  <h4>Response:</h4>
+  <p>JSON object representing the restaurant.</p>
+  <h4>Authentication:</h4>
+  <p>Not required.</p>
+
+  <h3>POST /restaurants</h3>
+  <p>Create a new restaurant.</p>
+  <h4>Request:</h4>
+  <p>JSON object representing the new restaurant.</p>
+  <h4>Response:</h4>
+  <p>JSON object representing the created restaurant.</p>
+  <h4>Authentication:</h4>
+  <p>Required (admin role).</p>
+
+  <h3>PATCH /restaurants/:id</h3>
+  <p>Update an existing restaurant.</p>
+  <h4>Request:</h4>
+  <p>JSON object representing the updated restaurant.</p>
+  <h4>Response:</h4>
+  <p>JSON object representing the updated restaurant.</p>
+  <h4>Authentication:</h4>
+  <p>Required (admin role).</p>
+
+  <h3>DELETE /restaurants/:id</h3>
+  <p>Delete a restaurant.</p>
+  <h4>Request:</h4>
+  <p>No parameters required.</p>
+  <h4>Response:</h4>
+  <p>No content.</p>
+  <h4>Authentication:</h4>
+  <p>Required (admin role).</p>
+
+  <h2>Menu Item Endpoints</h2>
+
+  <h3>GET /menu_items</h3>
+  <p>Get a list of all menu items.</p>
+  <h4>Request:</h4>
+  <p>No parameters required.</p>
+  <h4>Response:</h4>
+  <p>JSON array of menu item objects.</p>
+  <h4>Authentication:</h4>
+  <p>Not required.</p>
+
+  <!-- Other menu item endpoints -->
+
+  <h2>User Endpoints</h2>
+
+  <!-- User endpoints -->
+
+  <h2>Order Endpoints</h2>
+
+  <!-- Order endpoints -->
+
+  <h2>Authentication</h2>
+  <p>Some endpoints require authentication/authorization. To access these endpoints, include an <code>Authorization</code> header in your requests with a valid token.</p>
+
+  <h2>Testing</h2>
+  <p>Run the test suite to ensure everything is working correctly:</p>
+  <pre>rails test</pre>
+
+  <h2>Documentation</h2>
+  <p>Detailed API documentation is available in the <code>docs</code> directory. Open <code>index.html</code> file in your browser to view the documentation.</p>
+
+  <h2>Contributing</h2>
+  <p>Contributions are welcome! Please follow the guidelines in the <code>CONTRIBUTING.md</code> file.</p>
+
+  <h2>License</h2>
+  <p>This project is licensed under the MIT License. See the <code>LICENSE.md</code> file for more details.</p>
+</body>
+</html>
