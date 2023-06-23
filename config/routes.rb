@@ -8,5 +8,8 @@ Rails.application.routes.draw do
     end
   end
   resources :order_items, except: [:new, :edit]
+
+  post '/login', to: 'sessions#create'
+  delete '/logout', to: 'sessions#destroy'
 end
 
