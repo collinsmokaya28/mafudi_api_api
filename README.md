@@ -60,6 +60,46 @@ Detailed API documentation is available in the docs directory. Open index.html i
 3. Commit your changes: git commit -m 'Add some feature'.
 4. Push to the branch: git push origin feature/your-feature-name.
 Open a pull request.
+
+## API Testing with Postman
+
+1. Make sure you have [Postman](https://www.postman.com/downloads/) installed on your local machine.
+
+2. Launch Postman and create a new request collection for the Food Delivery Platform API.
+
+3. Set the base URL for your API requests to `http://localhost:3000` or the appropriate URL for your local development environment.
+
+4. Obtain an access token for authentication:
+   - Send a POST request to `/login` with the following request body:
+     ```
+     {
+       "email": "your_email@example.com",
+       "password": "your_password"
+     }
+     ```
+   - Retrieve the access token from the response.
+
+5. Add the access token to the "Authorization" header of your requests:
+   - Click on the "Headers" tab in Postman.
+   - Add a new key-value pair:
+     - Key: Authorization
+     - Value: Bearer YOUR_ACCESS_TOKEN
+
+6. Test the API endpoints:
+   - Use the available endpoints and their respective request methods (GET, POST, PATCH, DELETE) to interact with the API.
+   - Refer to the API documentation for details on each endpoint, their required parameters, and expected responses.
+
+7. Customize your requests:
+   - Modify the request body, query parameters, or headers as necessary for your testing scenarios.
+   - Ensure you include valid data and adhere to any validation rules defined by the API.
+
+8. Review the responses:
+   - Verify that the responses match your expectations based on the API documentation.
+   - Pay attention to the response status codes, response bodies, and any error messages returned.
+
+9. Continue testing and iterating as needed to validate the API's functionality.
+
+
 ## License
 
 This project is licensed under the MIT License.
