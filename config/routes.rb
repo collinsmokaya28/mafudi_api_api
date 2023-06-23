@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  resources :restaurants, except: [:new, :edit]
+  resources :menu_items, except: [:new, :edit]
+  resources :users, except: [:new, :edit]
+  resources :orders, except: [:new, :edit] do
+    member do
+      patch 'fulfill'
+    end
+  end
+  resources :order_items, except: [:new, :edit]
 end
+
